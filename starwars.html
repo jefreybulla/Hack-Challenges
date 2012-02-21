@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+
+	addEventListener("load",function(){
+	var element = document.getElementById("div1");
+	//This animation is made onload
+	$(element).animate({
+		top:"1px"
+	},10000);
+	
+});	
+/* */
+</script>
+<style type="text/css">
+body
+{
+	background-color:black;
+}
+
+/* Based in this example
+ * http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_perspective1 */
+#div1
+{
+position: absolute;
+top:200px;
+height: 150px;
+width: 400px;
+margin: 1px;
+padding:10px;
+-webkit-perspective:150; /* Safari and Chrome */
+}
+
+#div2
+{
+padding:50px;
+position: absolute;
+color:white;
+-webkit-transform: rotateX(25deg); /* Safari and Chrome */
+}
+</style>
+</head>
+
+<body>
+
+<div id="div1">
+  <div id="div2">HELLO This is the hack for the Start Wars efect
+  	dddddddddddddddddddddddddddddddddddddddddddddddddddd
+  	dddddddddddddddddddddddddddddddddddddddddddddddddddd
+  	dddddddddddddddddddddddddddddddddddddddddddddddddddd
+  	dddddddddddddddddddddddddddddddddddddddddddddddddddd
+  	dddddddddddddddddddddddddddddddddddddddddddddddddddd
+  	dddddddddddddddddddddddddddddddddddddddddddddddddddd
+  	dddddddddddddddddddddddddddddddddddddddddddddddddddd
+  	</div>
+</div>
+
+ 
+</body>
+</html>
