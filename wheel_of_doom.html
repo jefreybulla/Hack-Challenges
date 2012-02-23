@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
 <script type="text/javascript">
-	//###Ramdom number an beep#######
+	//###Ramdom number and beep#######
+	var x = 5; //set the maximum ramdom value
+	var time = 5000; //in miliseconds
+	
 	function PlaySound(soundObj) {
   	var sound = document.getElementById(soundObj);
   	sound.Play();
   	}
 	
 	function makeanumber(){
-		number=Math.floor(Math.random()*9+1);
+		PlaySound("sound1");
+		number=Math.floor(Math.random()*x+1);
 		alert(number);
 		document.getElementById("target").appendChild=number;
-		PlaySound("sound1");
 
 		
 	}
 	addEventListener("load",function(){
 		document.getElementById("p1").addEventListener("click",function(e){
-			//alert(e);
-			//document.getElementById("p1").style.backgroundColor="yellow";
-			interval1=setInterval("makeanumber()",5000);				
+			interval1=setInterval("makeanumber()",time);				
 			
 		})
 	});
@@ -28,14 +29,10 @@
 <embed src="song.mp3" autostart="false" width="0" height="0" id="sound1"
 enablejavascript="true">
 </head>
-
 <body>
 <div>
 <input type="button" id="p1" value="Activate timer">
 <hr>	
-<p id=target></p>	
-
-
      <footer>
      <p>By Jefrey Bulla</p> 
     </footer>
